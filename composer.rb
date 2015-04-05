@@ -2576,6 +2576,7 @@ end
 # >-----------------------------[ Run 'Bundle Install' ]-------------------------------<
 
 say_wizard "Installing gems. This will take a while."
+run 'gem install bundler'
 run 'bundle install --without production'
 say_wizard "Updating gem paths."
 Gem.clear_paths
